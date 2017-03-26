@@ -1,0 +1,116 @@
+.container {
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.logo h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 16px; }
+
+nav ul {
+  margin: 0px;
+  display: flex;
+  list-style: none; }
+nav li {
+  margin: 0px 5px; }
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 20px; }
+
+.intro {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff, #3a7bd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff, #3a7bd5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.introContainer {
+  width: 70%;
+  display: Flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.introContent {
+  width: 400px; }
+  .introContent p {
+    margin: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
+
+.introIamge img {
+  width: 100%;
+  -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); }
+
+section {
+  margin-top: 130px;
+  text-align: center; }
+
+article {
+  width: 700px;
+  margin: auto; }
+  article p {
+    text-align: justify;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif; }
+  article img {
+    width: 400px;
+    margin-top: 25px; }
+
+.contact {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00d2ff, #3a7bd5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00d2ff, #3a7bd5); }
+
+form {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+form h3 {
+  color: white; }
+
+input[type=text] {
+  padding: 5px 10px;
+  width: 300px;
+  margin-top: 5px; }
+
+input[type=submit] {
+  margin-top: 5px;
+  padding: 9px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 12px; }
+
+input[type=text]:focus {
+  -webkit-box-shadow: 0px 2px 18px 0px #5f6666;
+  -moz-box-shadow: 0px 2px 18px 0px #5f6666;
+  box-shadow: 0px 2px 18px 0px #5f6666; }
+
+.socialIcon {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto; }
+
+.socialIcon i {
+  font-size: 30px; }
+
+/*# sourceMappingURL=style.css.map */
