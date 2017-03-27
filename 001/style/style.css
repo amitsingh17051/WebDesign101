@@ -10,18 +10,34 @@ header {
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 16px; }
 
-nav ul {
-  margin: 0px;
-  display: flex;
-  list-style: none; }
-nav li {
-  margin: 0px 5px; }
-nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 10px 20px; }
+nav {
+  cursor: pointer; }
+  nav .list {
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+    right: -20%;
+    top: 0%;
+    display: none;
+    transition: 0.3s ease-in; }
+    nav .list i {
+      padding-top: 20px;
+      color: steelblue; }
+    nav .list li {
+      list-style: none;
+      margin: 30px 20px; }
+    nav .list a {
+      text-decoration: none;
+      padding: 10px 20px;
+      color: steelblue;
+      font-weight: 300;
+      transition: 0.2s ease-in-out; }
+    nav .list a:hover {
+      color: white;
+      background-color: black; }
 
 .intro {
   background: #00d2ff;
@@ -40,6 +56,8 @@ nav a {
   margin-top: 10px;
   padding-top: 50px;
   padding-bottom: 50px; }
+  .introContainer h2 {
+    color: white; }
 
 .introContent {
   width: 400px; }
@@ -142,9 +160,6 @@ input[type=text]:focus {
     width: 300px;
     margin-top: 25px; } }
 @media (max-width: 550px) {
-  body {
-    background-color: red; }
-
   .introContainer {
     display: Flex;
     flex-direction: column; }
@@ -157,7 +172,7 @@ input[type=text]:focus {
     font-family: 'Roboto', sans-serif; }
 
   .introImage img {
-    width: 100; }
+    width: 100%; }
 
   article {
     width: 250px; }
@@ -168,7 +183,28 @@ input[type=text]:focus {
       width: 200px;
       margin-top: 25px; }
 
-  nav {
-    display: none; } }
+  .list {
+    padding: 0px 30px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    background-color: red;
+    right: -40%;
+    display: none; }
+    .list li {
+      margin: 20px 5px; }
+    .list i {
+      padding-top: 20px; }
+
+  .introContent {
+    width: 300px; }
+    .introContent p {
+      margin: 10px;
+      font-size: 14px;
+      line-height: 25px;
+      color: white;
+      font-family: 'Roboto', sans-serif; } }
 
 /*# sourceMappingURL=style.css.map */

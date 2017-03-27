@@ -18,24 +18,45 @@ header {
     font-size: 16px;
 }
 nav {
-    ul {
-        margin:0px;
-        display: flex;
-        list-style: none;
+  cursor:pointer;
+  .list {
+    margin:0px;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    background-color:white;
+    right:-20%;
+    top:0%;
+    display:none;
+    transition: 0.3s ease-in;
+    i {
+      padding-top:20px;    
+      color:steelblue;
     }
     li {
-        margin:0px 5px;
+      
+      list-style:none;
+      margin:30px 20px;
+      
     }
     
     a {
-        text-decoration: none;
-        color:black;
-        font-size: 12px;
-        font-weight:500;
-        padding: 10px 20px;
+      text-decoration:none;
+      padding: 10px 20px;
+      color:steelblue;
+      font-weight:300; 
+      transition: 0.2s ease-in-out;
     }
 
+    a:hover {
+        color:white;
+      background-color:black;
+    }
+  }
 }
+
+
 
 
 .intro {
@@ -56,7 +77,10 @@ background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, F
     margin:auto;
     margin-top:10px;
     padding-top: 50px;
-     padding-bottom: 50px;
+    padding-bottom: 50px;
+    h2 {
+        color:white;
+    }
 }
 .introContent {
     width:400px;
@@ -208,11 +232,6 @@ article {
 @media (max-width: 550px) {
 
 
-    body{
-        background-color:red;
-    }
-
-
     .introContainer {
     display: Flex;
     flex-direction: column;
@@ -231,7 +250,7 @@ article {
 
 .introImage {
     img {
-        width: 100;
+        width: 100%;
     }
 }
 
@@ -251,9 +270,36 @@ article {
     }
 }
 
-nav {
-    display:none;
+.list{
+    padding:0px 30px;
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0%;
+    background-color:red;
+    right: -40%;
+    display: none;
+    li {
+        margin:20px 5px;
+    }
+
+    i {
+        padding-top:20px; 
+    }
 }
 
+
+.introContent {
+    width:300px;
+
+    p {
+        margin:10px;
+        font-size: 14px;
+        line-height: 25px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+}
 
 }
